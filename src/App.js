@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
-import AddEntryForm from './Components/AddEntryForm/AddEntryForm';
-import EntriesChartTracker from './Components/EntriesChartTracker/EntriesChartTracker';
+import AddEntryForm from './Components/AddEntry/AddEntryForm';
 
 function App() {
 
-const [entries, setEntries] = useState([{weight: 175, date: '11-23-2021'}, {weight: 176, date: '11-24-2021'}])
+  const [entries, setEntries] = useState([{Index: '', name: 'Buddy the Elf', post: 'Merry Christmas', status: 'Thumbs Up'}, {index: '', name: 'Scrooge', post: 'Bah Humbug', status: 'Thumbs Down'}])
 
   function addNewEntry(entry) {
 
     let tempEntries = [...entries, entry];
-
+    
     setEntries(tempEntries);
   }
 
@@ -18,7 +17,7 @@ const [entries, setEntries] = useState([{weight: 175, date: '11-23-2021'}, {weig
     <div >
       <DisplayEntries parentEntries={entries} /> 
       <AddEntryForm addNewEntryProperty={addNewEntry}/> 
-      <EntriesChartTracker />
+      <EntriesChartTracker parentEntries={entries} />
     </div>
   );
 }
