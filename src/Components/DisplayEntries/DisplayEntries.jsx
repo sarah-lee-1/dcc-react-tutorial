@@ -1,3 +1,5 @@
+import LikeButton from "../LikeButton/LikeButton";
+// Like Button is added as a coding example
 
 const DisplayEntries = (props) => {
     return ( 
@@ -16,6 +18,7 @@ const DisplayEntries = (props) => {
                   <td>{index + 1}</td>
                   <td>{entry.weight}</td>
                   <td>{entry.date}</td>
+                  <td><LikeButton/></td>
                   </tr>
               );
             })}

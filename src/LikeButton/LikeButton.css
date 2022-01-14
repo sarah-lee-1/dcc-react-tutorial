@@ -1,0 +1,16 @@
+.toggle--button{
+    height: 100px;
+    width: 400px;
+    margin-top: 15%
+    border: none;
+    font-size: 25px
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    box-shadow: black
+    border-radius: 10px
+    margin-left: auto;
+    margin-right: auto;
+    display: table; 
+
+}
