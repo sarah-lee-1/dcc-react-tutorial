@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import likebutton.css
 // import "./styles.css"; 
 
+// Toggle Button
 const LikeButton = () => {
     const [state, setState] = useState(false);
 
